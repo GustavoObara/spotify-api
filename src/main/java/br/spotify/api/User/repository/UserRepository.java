@@ -1,6 +1,6 @@
-package br.spotify.user.repository;
+package br.spotify.api.User.repository;
 
-import br.spotify.user.model.UserSpotify;
+import br.spotify.api.User.model.UserSpotify;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

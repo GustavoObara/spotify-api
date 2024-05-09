@@ -1,7 +1,7 @@
-package br.spotify.user.controller;
+package br.spotify.api.User.controller;
 
-import br.spotify.user.model.UserSpotify;
-import br.spotify.user.service.UserService;
+import br.spotify.api.User.model.UserSpotify;
+import br.spotify.api.User.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

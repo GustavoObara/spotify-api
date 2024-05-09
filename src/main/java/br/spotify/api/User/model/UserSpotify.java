@@ -1,4 +1,4 @@
-package br.spotify.user.model;
+package br.spotify.api.User.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

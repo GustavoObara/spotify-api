@@ -1,13 +1,13 @@
-package br.spotify.user;
+package br.spotify.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class UserApplication {
+public class SpotifyApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UserApplication.class, args);
+		SpringApplication.run(SpotifyApiApplication.class, args);
 	}
 
 }
