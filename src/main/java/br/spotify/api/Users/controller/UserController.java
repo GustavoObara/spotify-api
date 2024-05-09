@@ -1,7 +1,7 @@
-package br.spotify.api.User.controller;
+package br.spotify.api.Users.controller;
 
-import br.spotify.api.User.model.UserSpotify;
-import br.spotify.api.User.service.UserService;
+import br.spotify.api.Users.model.User;
+import br.spotify.api.Users.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,18 +15,18 @@ public class UserController {
     private final UserService userService;
 
     @GetMapping("/all")
-    public List<UserSpotify> getUsers(){
+    public List<User> getUsers(){
         return userService.getUsers();
     }
 
     @GetMapping("/{id}")
-    public List<UserSpotify> getUser(@PathVariable Long id){
+    public List<User> getUser(@PathVariable Long id){
         return userService.getUserById(id);
     }
 
     @PostMapping("/add")
-    public void addUser(@RequestBody UserSpotify userSpotify){
-        userService.addUser(userSpotify);
+    public void addUser(@RequestBody User user){
+        userService.addUser(user);
     }
 
     @DeleteMapping("/remove/{id}")
