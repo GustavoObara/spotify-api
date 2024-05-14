@@ -1,7 +1,7 @@
-package br.spotify.api.Users.controller;
+package br.spotify.api.Services.Users.controller;
 
-import br.spotify.api.Users.model.User;
-import br.spotify.api.Users.service.UserService;
+import br.spotify.api.Services.Users.model.User;
+import br.spotify.api.Services.Users.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -33,5 +33,4 @@ public class UserController {
     public void deleteUser(@PathVariable Long id){
         userService.deleteUser(id);
     }
-
 }

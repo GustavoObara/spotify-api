@@ -1,10 +1,7 @@
-package br.spotify.api.Playlists.service;
+package br.spotify.api.Services.Playlists.service;
 
-import br.spotify.api.Playlists.model.Playlist;
-import br.spotify.api.Playlists.repository.PlaylistRepository;
-import br.spotify.api.Users.model.User;
-import br.spotify.api.Users.repository.UserRepository;
-import br.spotify.api.Users.service.UserService;
+import br.spotify.api.Services.Playlists.model.Playlist;
+import br.spotify.api.Services.Playlists.repository.PlaylistRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

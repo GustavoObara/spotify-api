@@ -1,8 +1,7 @@
-package br.spotify.api.Playlists.controller;
+package br.spotify.api.Services.Playlists.controller;
 
-import br.spotify.api.Playlists.model.Playlist;
-import br.spotify.api.Playlists.service.PlaylistService;
-import br.spotify.api.Users.model.User;
+import br.spotify.api.Services.Playlists.model.Playlist;
+import br.spotify.api.Services.Playlists.service.PlaylistService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

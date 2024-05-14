@@ -1,7 +1,7 @@
-package br.spotify.api.Users.service;
+package br.spotify.api.Services.Users.service;
 
-import br.spotify.api.Users.model.User;
-import br.spotify.api.Users.repository.UserRepository;
+import br.spotify.api.Services.Users.model.User;
+import br.spotify.api.Services.Users.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

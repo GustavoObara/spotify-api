@@ -1,6 +1,6 @@
-package br.spotify.api.Users.service;
+package br.spotify.api.Services.Users.service;
 
-import br.spotify.api.Users.model.User;
+import br.spotify.api.Services.Users.model.User;
 
 import java.util.List;
 
