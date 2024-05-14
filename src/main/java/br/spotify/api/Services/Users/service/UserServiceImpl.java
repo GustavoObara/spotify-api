@@ -1,7 +1,7 @@
-package br.spotify.user.service;
+package br.spotify.api.Services.Users.service;
 
-import br.spotify.user.model.UserSpotify;
-import br.spotify.user.repository.UserRepository;
+import br.spotify.api.Services.Users.model.User;
+import br.spotify.api.Services.Users.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,18 +15,18 @@ public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
 
     @Override
-    public List<UserSpotify> getUsers() {
+    public List<User> getUsers() {
         return userRepository.findAll();
     }
 
     @Override
-    public List<UserSpotify> getUserById(Long id) {
+    public List<User> getUserById(Long id) {
         return userRepository.findAllById(Collections.singleton(id));
     }
 
     @Override
-    public void addUser(UserSpotify userSpotify) {
-        userRepository.save(userSpotify);
+    public void addUser(User user) {
+        userRepository.save(user);
     }
 
     @Override
